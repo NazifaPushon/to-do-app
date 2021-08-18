@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style></style>
+  </head>
+  <body class="bg-purple-100">
+    <header>
+      <h1 class="text-center text-5xl py-5 font-semibold text-purple-700">
+        TO DO APP
+      </h1>
+    </header>
+    <main class="w-2/3 mx-auto p-5">
+      <!-- Creating To Do -->
+      <div class="text-center px-2 py-5">
+        <input
+          class="
+            w-4/5
+            py-3
+            px-3
+            rounded-xl
+            focus:outline-none focus:ring focus:border-purple-300
+          "
+          type="text"
+          name=""
+          id="create-todo"
+          placeholder="Write Down Your Work"
+        />
+        <button
+          class="
+            mx-3
+            py-3
+            text-white
+            font-medium
+            px-10
+            bg-purple-400
+            rounded-xl
+            text-lg
+          "
+          id="add-btn"
+        >
+          Add
+        </button>
+      </div>
+      <div
+        class="bg-purple-400 mx-8 p-5 cursor-pointer rounded-2xl"
+        id="parent-element"
+      >
+        <h1 class="text-3xl py-5 font-semibold text-white">YOUR WORK STATUS</h1>
+        <hr />
+        <div class="flex justify-between my-3 my-4">
+          <p class="text-white text-xl py-2 para">TO DO 1</p>
+          <button
+            class="
+              px-4
+              py-2
+              rounded-xl
+              bg-purple-200
+              button
+              text-purple-700
+              font-medium
+            "
+          >
+            Delete
+          </button>
+        </div>
+        <div class="flex justify-between my-3 my-4">
+          <p class="text-white text-xl py-2 para">TO DO 2</p>
+          <button
+            class="
+              px-4
+              py-2
+              rounded-xl
+              bg-purple-200
+              button
+              text-purple-700
+              font-medium
+            "
+          >
+            Delete
+          </button>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
